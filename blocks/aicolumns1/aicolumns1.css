@@ -1,0 +1,44 @@
+
+.aicolumns1-wrapper > .aicolumns1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.aicolumns1 > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; /* Ensure elements are side by side */
+  justify-content: center;
+  width: 100%;
+}
+
+.aicolumns1 > div > div {
+  flex: 0 1 calc(33.33% - 20px); /* 3 items per row with adjusted spacing */
+  margin: 20px 0; /* Adjust margin for spacing around items */
+  display: flex;
+  flex-direction: column; /* Ensure nested elements are stacked vertically */
+  align-items: center;
+}
+
+.aicolumns1 img {
+  width: auto;
+  height: 100px; /* Adjust as necessary for better fit */
+}
+
+.aicolumns1 h6, .aicolumns1 a {
+  color: var(--text-color); /* Change text color to black */
+  margin-top: 10px; /* Adjust spacing between icon and label */
+  text-align: center; /* Center-align text */
+}
+
+@media (min-width: 900px) {
+  .aicolumns1-wrapper > .aicolumns1 {
+    justify-content: space-between; /* Distribute space around items */
+  }
+
+  .aicolumns1 > div > div {
+    flex: 0 1 calc(33.33% - 20px); /* Maintain 3 items per row */
+  }
+}
