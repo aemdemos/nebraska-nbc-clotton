@@ -1,73 +1,40 @@
 
-.aidefault4-wrapper {
-  background-color: #002b2b; /* Dark background color */
-  padding: 10px; /* Optional padding */
-  color: white; /* Ensure text is visible on dark background */
-}
-
-.aidefault4-wrapper > .aidefault4 > div {
-  display: flex;
-  flex-direction: row; /* Ensure elements are side by side */
-  justify-content: space-between;
-  align-items: center;
-}
-
-.aidefault4-wrapper > .aidefault4 > div > div {
-  display: flex;
-  flex-direction: row; /* Ensure elements within div are side by side */
-  align-items: center;
-}
-
-.aidefault4-wrapper > .aidefault4 > div > div > p {
-  margin: 0;
-  display: flex;
-  flex-direction: row; /* Ensure elements within p are side by side */
-  align-items: center;
-}
-
-.aidefault4-wrapper > .aidefault4 > div > div > p > picture {
-  margin-right: 5px; /* Adjust space between image and text */
-  display: flex;
-  align-items: center;
-}
-
-.aidefault4-wrapper > .aidefault4 > div > div > p::after {
-  content: '|';
-  margin: 0 10px;
-}
-
-.aidefault4-wrapper > .aidefault4 > div > div > p:last-child::after {
-  content: '';
-  margin: 0;
-}
-
-/* Adjust the width of the picture element */
-.aidefault4-wrapper > .aidefault4 > div > div > p > picture {
-  width: 24px; /* Ensure the icon size is slightly larger */
-  height: 24px; /* Ensure the icon size is slightly larger */
-}
-
-/* Adjust the alignment of the icon */
-.aidefault4-wrapper > .aidefault4 > div > div > p > picture > img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle; /* Ensure the icon is vertically aligned */
-}
-
-/* Ensure the block spans the entire width of the page if necessary */
 .aidefault4-container > .aidefault4-wrapper {
+  background-color: #002A2A; /* Dark background color */
+  padding: 10px 20px; /* Add padding to the wrapper for better spacing */
   max-width: unset;
-  padding: 0;
 }
 
-/* Adjust font size and line height for better alignment */
-.aidefault4-wrapper > .aidefault4 > div > div > p {
-  font-size: 16px; /* Adjust the font size */
-  line-height: 24px; /* Adjust the line height to match icon size */
+.aidefault4-container > .aidefault4-wrapper > .block.aidefault4 > div {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
-/* Ensure vertical alignment of text and icon within p */
-.aidefault4-wrapper > .aidefault4 > div > div > p {
+.aidefault4-container > .aidefault4-wrapper > .block.aidefault4 > div > div {
   display: flex;
   align-items: center;
+  flex-direction: row; /* Ensure elements are side by side */
+  gap: 10px; /* Add spacing between the main div elements */
+}
+
+.aidefault4-container > .aidefault4-wrapper > .block.aidefault4 > div > div > p {
+  margin: 0;
+  color: #FFFFFF; /* White text color */
+  font-size: 14px; /* Adjust font size as necessary */
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust spacing between inline elements */
+}
+
+.aidefault4-container > .aidefault4-wrapper > .block.aidefault4 > div > div > p > picture {
+  display: inline-flex; /* Align icon with text */
+  align-items: center;
+  margin-right: 5px; /* Reduce space between the icon and text */
+}
+
+.aidefault4-container > .aidefault4-wrapper > .block.aidefault4 > div > div > p > picture img {
+  vertical-align: middle;
+  margin-right: 0; /* Remove extra space between the icon and text */
 }

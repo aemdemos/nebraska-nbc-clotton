@@ -1,0 +1,90 @@
+
+.aidefault3-container > .aidefault3-wrapper {
+    max-width: unset;
+    padding: 0;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block {
+    width: 100%;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div {
+    background-color: #d2b48c; /* Approximation of wood texture color */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    min-height: 400px; /* Adjust based on your needs */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div::before {
+    content: "The Nebraska Brand Committee was created by the Legislature in 1941 to inspect cattle and investigate missing and/or stolen cattle. It is a self-supporting cash fund agency. Its operating funds come solely from fees collected for brand recordings, brand inspections and registered feedlots and dairies.";
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: #ffffff; /* Add text color */
+    font-size: 1rem; /* Adjust font size */
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div::after {
+    content: "NBC Strategic Plan";
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: #ffffff; /* Add text color */
+    font-size: 1.2rem; /* Adjust font size */
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div > div {
+    background-color: #003b49; /* Dark color for bottom section */
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div > div > div {
+    width: 25%; /* Adjust the width as needed */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Ensure elements are side by side */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow for multiple rows of items */
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div > div > div::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ddd; /* Placeholder for icon */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.aidefault3-container > .aidefault3-wrapper > .aidefault3.block > div > div > div > div::after {
+    content: "Label"; /* Placeholder for label */
+    display: block;
+    margin-top: 10px;
+}

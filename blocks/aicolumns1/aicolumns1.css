@@ -1,44 +1,36 @@
 
 .aicolumns1-wrapper > .aicolumns1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure items are evenly spaced */
+    gap: 20px; /* Adjust the gap as needed */
 }
 
-.aicolumns1 > div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row; /* Ensure elements are side by side */
-  justify-content: center;
-  width: 100%;
+.aicolumns1-wrapper > .aicolumns1 > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Ensure elements are side by side */
+    width: 100%;
+    justify-content: center;
 }
 
-.aicolumns1 > div > div {
-  flex: 0 1 calc(33.33% - 20px); /* 3 items per row with adjusted spacing */
-  margin: 20px 0; /* Adjust margin for spacing around items */
-  display: flex;
-  flex-direction: column; /* Ensure nested elements are stacked vertically */
-  align-items: center;
+.aicolumns1-wrapper > .aicolumns1 > div > div {
+    flex: 0 0 calc(33.33% - 20px); /* 3 columns layout */
+    display: flex;
+    flex-direction: column; /* Ensure elements are stacked vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px; /* Add bottom margin for vertical spacing */
 }
 
-.aicolumns1 img {
-  width: auto;
-  height: 100px; /* Adjust as necessary for better fit */
-}
-
-.aicolumns1 h6, .aicolumns1 a {
-  color: var(--text-color); /* Change text color to black */
-  margin-top: 10px; /* Adjust spacing between icon and label */
-  text-align: center; /* Center-align text */
+.aicolumns1-wrapper .aicolumns1 img {
+    width: auto; /* Maintain the image's aspect ratio */
+    max-width: 200px; /* Prevent the images from stretching too much */
 }
 
 @media (min-width: 900px) {
-  .aicolumns1-wrapper > .aicolumns1 {
-    justify-content: space-between; /* Distribute space around items */
-  }
-
-  .aicolumns1 > div > div {
-    flex: 0 1 calc(33.33% - 20px); /* Maintain 3 items per row */
-  }
+    .aicolumns1-wrapper > .aicolumns1 > div > div {
+        flex: 0 0 calc(33.33% - 20px); /* Ensure the 3 columns layout for larger screens */
+    }
 }

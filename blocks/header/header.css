@@ -1,22 +1,25 @@
 
-/* Root selector to scope the styles */
 .header-wrapper {
     background-image: url('/media_11a806d481806aa17b1ce3871d2de0cd40915d373.jpeg?width=2000&format=jpeg&optimize=medium');
     background-size: cover;
     background-position: center;
     color: white;
-    height: 100vh; /* Ensure it covers the full viewport height */
+    height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .header-wrapper .nav-wrapper {
     display: flex;
-    justify-content: center; /* Center the navigation wrapper */
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 2;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
+    background-color: transparent; /* Remove the dark overlay */
     top: 0;
     padding: 0 24px;
 }
@@ -46,6 +49,7 @@ header nav .nav-sections {
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
+    flex-direction: row; /* Ensure elements are side by side */
 }
 
 header nav .nav-sections ul {
@@ -55,6 +59,7 @@ header nav .nav-sections ul {
     padding: 0;
     margin: 0;
     white-space: nowrap;
+    flex-direction: row; /* Ensure elements are side by side */
 }
 
 header nav .nav-sections li {
@@ -78,7 +83,6 @@ header nav .nav-hamburger {
     visibility: hidden;
 }
 
-/* Center the text elements vertically and horizontally */
 .default-content-wrapper {
     position: absolute;
     top: 50%;
@@ -86,7 +90,7 @@ header nav .nav-hamburger {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    z-index: 1; /* Ensure text appears behind the navigation */
+    z-index: 1;
 }
 
 .default-content-wrapper h1 {
@@ -105,16 +109,31 @@ header nav .nav-hamburger {
     }
 
     .default-content-wrapper {
-        top: 30%;
-        transform: translate(-50%, -30%);
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
-/* Hide the main menu by default */
-header nav .nav-sections {
+header nav .nav-hamburger {
     display: none;
+    visibility: hidden;
 }
 
-header nav[aria-expanded="true"] .nav-sections {
+.header-wrapper .nav-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
     display: flex;
+    max-width: 1264px;
+}
+
+header {
+    display: flex;
+}
+
+.header-wrapper .nav-wrapper {
+    position: fixed;
+    z-index: 2;
 }
